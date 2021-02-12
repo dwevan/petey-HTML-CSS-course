@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables Cheat Sheet</title>
+    </head>
+    <body>
+        <!-- Simple 2x2 Table -->
+        <table>
+            <tr>
+                <td>0</td>
+                <td>Intro</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>HTML P1</td>
+            </tr>
+        </table>
+
+        <!-- Table with optional header & footers -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Lesson No</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>Intro</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Left (Footer)</td>
+                    <td>Right (Footer)</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Table with colspan & rowspan attributes -->
+        <!-- Merge Cells function essentially -->
+        <!-- colspan & rowspan attributes default is 1 -->
+        <table>
+            <thead>
+                <tr>
+                <!-- colspan spans across colums - looks like merged cells in a row -->
+                <th colspan="2">Across two cols!</th>
+                </tr>
+            </thead>
+            <tr>
+                <!-- rowspan spans across rows - looks like merged cells in a column -->
+                <td rowspan="2">Across two rows!</td>
+                <td>Intro</td>
+            </tr>
+            <tr>
+                <td>HTML P1</td>
+            </tr>
+        </table>
+    </body>
+</html>
