@@ -12,9 +12,9 @@
 		.shp2 { fill: #492c2b } 
 		.shp3 { fill: #6e5052 } 
 		.shp4 { fill: #9d4441 } 
-		circle { fill: #808080; }
+		circle { fill: none; }
 		@media (prefers-color-scheme: dark) {
-			circle { fill: #F5F5F5; }
+			circle { fill: yellow; }
 		}
 	</style>
 	<circle cx="50%" cy="50%" r="50%"/>
