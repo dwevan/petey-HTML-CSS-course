@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Options</title>
+    <style>
+        #internal-div-example {
+          background: grey;
+          color: white;
+        }
+        #internal-p-example {
+          color: red;    
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+</head>
+<body>
+    <!-- Inline CSS - Use the style attribute on any tag! -->
+    <div style="background: pink; color: white;">
+        <p>I am the colour defined by my parent!</p>
+        <p style="color: purple;">I am PURPLE</p>
+    </div>
+    
+    <!-- Internal CSS - Add a <style> tag inside the <head> -->
+    <div id="internal-div-example">
+        <p>I am the colour defined by my parent!</p>
+        <p id="internal-p-example">I am RED</p>
+    </div>
+
+    <!-- External CSS - Referenced css file below in <head> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- External CSS - Same as Internal but CSS is in it's own file -->
+    <div id="external-div-example">
+        <p>I am the colour defined by my parent!</p>
+        <p id="external-p-example">I am BLUE</p>
+    </div>
+</body>
+</html>

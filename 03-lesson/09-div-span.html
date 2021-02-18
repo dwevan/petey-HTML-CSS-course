@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #devs-div {
+            color: seashell;
+        }
+        #my-span {
+            color: red;
+        }   
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+    <title>Divs and Spans Cheat Sheet</title>
+</head>
+<body>
+    <!-- 
+        div without style does nothing
+        think of div's like wrappers to apply style 
+    -->
+
+    <h2>Header outside of </h2>
+    <p>Text paragraph outside of div</p>
+
+    <div>
+        <h2>Header inside of div</h2>
+        <p>Paragraph inside of div</p>
+    </div>
+
+    <!-- Div with style-->
+    <div 
+        id="devs-div" 
+        style="background: radial-gradient(red, orange, yellow, green, blue, indigo, violet);"
+    >
+        <h2>Div Dev Header</h2>
+        <p>stylish text that looks sexy</p>
+    </div>
+
+    <!-- Block vs Inline -->
+    <!-- Block elements full width and new line -->
+    <h1 style="background:red;">I'm a block</h1>
+    <p style="background:orange;">I'm a block</p>
+    <ul style="background:yellow;">
+        <li style="background:green;">I'm a block</li>
+    </ul>
+
+    <!-- Inline elements wrap the same line -->
+    <a href="#" style="background:blue;">I'm inline</a>
+    <label style="background:pink;">I'm inline</label>
+    <button style="background:purple;">I'm inline</button>
+
+    <!-- Span with no style does nothing! -->
+    <h2>My Header <span>with a useless span!</span></h2>
+    <p>Here's some text... <span>but I have no style :(</span></p>
+
+    <!-- Span with style -->
+    <h2>My Header <span style="background: red;">with a span!</span></h2>
+    <p>Here's some text... <span id="my-span">I have no style :(</span></p>
+
+</body>
+</html>

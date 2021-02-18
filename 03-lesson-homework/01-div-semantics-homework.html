@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    address {
+      font-style: normal;
+    }
+    body {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), 
+      url("/01-lesson-homework/img/autumn-saus.gif");
+      background-color: rgba(199, 99, 238, 0.6);
+      background-repeat: repeat;
+      background-position: center;
+      background-size: 5%;
+      background-blend-mode: screen;
+      background-attachment: fixed;
+    }
+  </style>
+  <title>HTML5 Semantic Tags</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="card">
+    <h1>My Website</h1>
+    <p>Just Another Website</p>
+  </header>
+
+  <!-- Main Content (left) -->
+  <main>
+    <!-- Welcome Section -->
+    <section id="welcome" class="card">
+      <h2>Welcome To Our Website</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        cupiditate itaque possimus numquam corporis odit deserunt voluptas
+        repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+        temporibus! Sed. <br />
+        <a href="#" class="text-center">Click For More</a>
+      </p>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>From Our Blog</h2>
+      <!-- Article One -->
+      <article class="article">
+        <h3>Article One</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+          totam accusantium officiis!
+        </p>
+      </article>
+      <!-- Article Two -->
+      <article class="article">
+        <h3>Article Two</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+          totam accusantium officiis!
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Sidebar (right) -->
+  <sidebar class="card">
+    <nav>
+      <h3>Navigation</h3>
+      <!-- Navigation -->
+      <ul id="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <hr />
+
+    <!-- 
+      I added address tag below as this contains adress information, 
+      would style out italics if wanted 
+    -->
+    <address>
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>Address:</strong> 50 Main st, Boston MA</li>
+        <li><strong>Phone:</strong> (555) 555-5555</li>
+        <li><strong>Email:</strong> me@somethingcool.come</li>
+      </ul>
+    </address>
+  </sidebar>
+
+  <div class="clr"></div>
+
+  <!-- Footer -->
+  <footer>
+    <p class="text-center">Copyright &copy; My Website 2019</p>
+  </footer>
+</body>
+</html>
