@@ -1,0 +1,42 @@
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), 
+    url("/01-lesson-homework/img/autumn-saus.gif");
+    background-color: rgba(199, 99, 238, 0.6);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 5%;
+    background-blend-mode: screen;
+    background-attachment: fixed;
+}
+header, section, nav, footer, address {
+    background: rgba(182, 255, 249, 0.3);
+    padding-left: 1em;
+    color: rgb(8, 41, 139);
+}
+header {
+    text-align: center;
+}
+#blog {
+    float: left;
+    width: 65%;
+}
+article {
+    background: rgb(255, 182, 193, 0.3);
+    background-blend-mode: hard-light;
+    padding-left: 2em;
+}
+sidebar {
+    float: right;
+    width: 33%;
+}
+ul {
+    list-style: none;
+}
+address {
+    font-style: normal;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
