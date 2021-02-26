@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+      /* Element selector */
+      h2 {
+        color: pink;
+      }
+
+      /* ID selector */
+      #about-title {
+        color: orange;
+      }
+      
+      /* Class selector */
+      .title {
+        background: black;
+      }
+
+      /* grouping (multiple) selectors */
+      #welcome-title, 
+      #about-title, 
+      .title {
+        color: orange;
+      }
+
+      /* Descended (nested) selector */
+      #contact p {
+        color: purple;
+      }
+      #contact .bob{
+        color: seagreen;
+      }
+
+      /* combined selector */
+      p.info {
+        background: blue;
+      }
+
+      .info.cards {
+        background: grey;
+      }
+    </style>
+  </head>
+  <body>
+      <div>
+        <h2 id="welcome-title" class="title">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="about">
+        <h2 id="about-title" class="title">About</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div id="contact">
+        <h2>contact me -im not an important title therefore I inherit h2 style</h2>
+        <p class="bob">Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="info combined">
+        <h2>Dummy text - my div isnt backgrounded</h2>
+        <p class="info" id="combined-p">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div class="info cards">
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+  </body>
+</html>

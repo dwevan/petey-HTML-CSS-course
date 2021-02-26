@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors</title>
+  <style>
+    h1 {
+      /* Color name */
+      color: red;
+    }
+    h2 {
+      /* RGB color */
+      color: rgb(255, 180, 0);
+    }
+    h3 {
+      /* RGBA - 50% transparency */
+      color: rgba(255, 180, 0, 0.5);
+    }
+    h4 {
+      /* Hex */
+      color: #4ac0fc;
+      background-color: #f60;
+    }
+    h5 {
+      /* Hex with Opacity */
+      color: #001;
+      opacity: 0.5;
+    }
+    /* Opacity vs Alpha */
+    #opacity-example {
+      background: #ffc0cb;
+      opacity: 0.5;
+    }
+    #alpha-example {
+      background: rgba(255, 192, 203, 0.5);
+    }
+  </style>
+</head>
+  <body>
+    <h1>Color name title</h1>
+
+    <h2>RGB Title</h2>
+
+    <h3>RGBA Title</h3>
+
+    <h4>HEX</h4>
+
+    <h5>HEX with opacity</h5>
+
+    <div id="opacity-example">
+      <p>opacity example</p>
+    </div>
+
+    <div id="alpha-example">
+      <p>alpha example</p>
+    </div>  
+  </body>
+</html>
