@@ -1,0 +1,102 @@
+/* Style from INDEX */
+body.index {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/nice-saus.gif");
+  background-color: #9BFFEE;
+  background-size: 33%;
+  text-align: center;
+  font-family: 'Potta One', cursive;
+} 
+p.index {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Style from ABOUT */
+body.about {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/naughty-saus.gif");
+  background-color: rgb(255, 155, 172);
+  background-size: 33%;
+  text-align: justify;
+} 
+img.about {
+  width: 50%;
+  height: auto;
+}
+
+
+/* Style from CONTACT */
+body.contact {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+  url("/01-lesson-homework/img/celebrate-saus.gif");
+  background-color: hsl(46, 80%, 66%);
+  background-size: 25%;
+  text-align: justify;
+} 
+img.contact {
+  width: 70px;
+  height: auto;
+}
+
+
+
+.form input[type="text"], input[type="email"], select, label, textarea {
+  padding: 10px;
+  margin: 6px;
+}
+input[type="checkbox"] {
+  margin: 10px;
+}
+
+/* ---------------------------NEW CSS stylesheet below----------------------------------------------- */
+body {
+  /* all similar code */
+  background-repeat: repeat; 
+  background-blend-mode: screen;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  /* unique to index page - used as base */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/nice-saus.gif");
+  background-color: #9BFFEE;
+  background-size: 33%;
+  text-align: center;
+  font-family: 'Potta One', cursive;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 66vh;
+}
+/* navbar elements - should all be the same */
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(51, 51, 51, 0.9);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: rgb(17, 17, 17, 0.9);
+}
+/* MOAR JIFFS */
+.jiffs {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-style: oblique;
+}
