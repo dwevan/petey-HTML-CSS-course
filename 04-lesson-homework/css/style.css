@@ -79,8 +79,8 @@ nav a:hover {
   border-radius: 10px;
 }
 #ql a:hover {
-  -webkit-filter: invert(1);
-  filter: invert(1);
+  -webkit-filter: invert(.9);
+  filter: invert(.9);
 }
 #interesting {
   text-decoration: underline;
@@ -145,3 +145,4 @@ input[type="checkbox"], input[type="submit"] {
   font-weight: bolder;
   font-style: oblique;
 }
+/* MOOAAAAAARRRRRR!!! */
