@@ -1,61 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    body {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/naughty-saus.gif");
-      background-color: rgb(255, 155, 172);
-      background-repeat: repeat; 
-      background-size: 33%;
-      background-blend-mode: screen;
-      background-attachment: fixed;
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-      text-align: justify;
-    } 
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-    .jiffs {
-      text-decoration: underline;
-      font-weight: bolder;
-      font-style: oblique;
-    }
-    .nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(51, 51, 51, 0.9);
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    text-align: center;
-    }
-    .nav li {
-      display: inline;
-    }
-    .nav a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    .nav a:hover {
-      background-color: rgb(17, 17, 17, 0.9);
-    }
-  </style>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/01-lesson-homework/img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Delilah's info</title>
   </head>
-  <body class="about">
-    <h1 id="Information-Page">Delilah's Information Page</h1>
+  <body id="about">
+    <header>
+      <h1 id="Information-Page">Deli's Info</h1>
+    </header>
 
     <!-- nav bar -->
     <nav>
@@ -72,56 +29,60 @@
       </ul>
     </nav>
     
-    <p style="text-align: center;">
-      <strong>Date of birth:</strong> 
-      29-6-2020
-      <br>
+    <main>
+      <section id="basic-info">
+        <p style="text-align: center;">
+          <strong>Date of birth:</strong>
+          29-6-2020
+          <br>
+          <strong>Sex:</strong>
+          <em><span style="color: #ff00aa;">female</span></em>
+          <br>
+          <strong>Breed:</strong>
+          <a href="https://en.wikipedia.org/wiki/Dachshund">
+            Dachshund
+          </a>
+          <br>
+        
+          <strong>Size:</strong>
+          <a href="index.html#size">
+            <del>Slightly</del> ALOT larger than a Galaxy
+          </a>
+        </p>
+      </section>
 
-      <strong>Sex:</strong> 
-      <em><span style="color: #ff00aa;">female</span></em>
-      <br>
+      <hr>
 
-      <strong>Breed:</strong> 
-      <a href="https://en.wikipedia.org/wiki/Dachshund">
-        Dachshund
-      </a>
-      <br>
-      
-      <strong>Size:</strong> 
-      <a href="index.html#size">
-        Slightly larger than a Galaxy
-      </a>
-    </p>
+      <section id="favourite-things">
+        <h2>
+          <a style="text-decoration: none; color: #000;" href="index.html#computer">
+            Her <u>Favourite</u> Things
+          </a>
+        </h2>
+        <ol type="1">
+          <li><strong>sleeping</strong></li>
+          <li><em>cuddling</em></li>
+          <li>eating</li>
+          <li>snoozing</li>
+          <li><del>walkies</del></li>
+          <li>
+            <a style="text-decoration: none; color: #000;" href="index.html#squirrels">
+              squirrels?
+            </a>
+          </li>
+        </ol>
+        <p>More <a href="index.html">photos</a> of the gorgeous pup</p>
+      </section>
+    </main>
 
-    <hr>
-
-    <h2 id="favourite-things">
-      <a style="text-decoration: none; color: black;" href="index.html#computer">
-        Her <u>Favourite</u> Things
-      </a>
-    </h2>
-
-    <ol type="1">
-      <li><strong>sleeping</strong></li>
-      <li><em>cuddling</em></li>
-      <li>eating</li>
-      <li>snoozing</li>
-      <li><del>walkies</del></li>
-      <li>
-        <a style="text-decoration: none; color: black;" href="index.html#squirrels">
-          squirrels?
+    <footer>
+      <p style="text-align: center; color: #4169e1;">
+        <a href="https://stefanieshank.tumblr.com/">
+          <img src="/01-lesson-homework/img/naughty-saus.gif" alt="Naughty Delilah">
         </a>
-      </li>
-    </ol>
-
-    <p>More <a href="index.html">photos</a> of the gorgeous pup</p>
-
-    <p style="text-align: center; color: royalblue;">
-      <a href="https://stefanieshank.tumblr.com/">
-        <img class="about" src="/01-lesson-homework/img/naughty-saus.gif" alt="Naughty Delilah">
-      </a>
-      Click image above for more sausage
-      <span class="jiffs">'JIFFS'</span>
-    </p>
+        Click image above for more sausage
+        <span class="jiffs">'JIFFS'</span>
+      </p>
+    </footer>
   </body>
 </html>

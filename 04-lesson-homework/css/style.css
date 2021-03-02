@@ -1,77 +1,23 @@
-/* Style from INDEX */
-body.index {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/nice-saus.gif");
-  background-color: #9BFFEE;
-  background-size: 33%;
-  text-align: center;
-  font-family: 'Potta One', cursive;
-} 
-p.index {
-  font-family: 'Montserrat', sans-serif;
-}
+/* Trialling @import for contact page even though <link> is more efficient and according to google, BP! */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&family=Rubik&family=VT323&display=swap');
 
-
-/* Style from ABOUT */
-body.about {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/naughty-saus.gif");
-  background-color: rgb(255, 155, 172);
-  background-size: 33%;
-  text-align: justify;
-} 
-img.about {
-  width: 50%;
-  height: auto;
-}
-
-
-/* Style from CONTACT */
-body.contact {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-  url("/01-lesson-homework/img/celebrate-saus.gif");
-  background-color: hsl(46, 80%, 66%);
-  background-size: 25%;
-  text-align: justify;
-} 
-img.contact {
-  width: 70px;
-  height: auto;
-}
-
-
-
-.form input[type="text"], input[type="email"], select, label, textarea {
-  padding: 10px;
-  margin: 6px;
-}
-input[type="checkbox"] {
-  margin: 10px;
-}
-
-/* ---------------------------NEW CSS stylesheet below----------------------------------------------- */
+/* common style */
 body {
-  /* all similar code */
   background-repeat: repeat; 
   background-blend-mode: screen;
   background-attachment: fixed;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  /* unique to index page - used as base */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/nice-saus.gif");
-  background-color: #9BFFEE;
-  background-size: 33%;
-  text-align: center;
-  font-family: 'Potta One', cursive;
 }
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
-  height: 66vh;
 }
-/* navbar elements - should all be the same */
-.nav {
+
+/* navbar elements -  all the same */
+nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -80,20 +26,119 @@ img {
   position: sticky;
   top: 0;
   text-align: center;
+  font-family: 'Rubik', Verdana, Geneva, Tahoma, sans-serif;
 }
-.nav li {
+nav li {
   display: inline;
 }
-.nav a {
+nav a {
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-.nav a:hover {
+nav a:hover {
   background-color: rgb(17, 17, 17, 0.9);
 }
+
+/* Style for INDEX */
+#index {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/nice-saus.gif");
+  background-color: #9BFFEE;
+  background-size: 33%;
+  text-align: center;
+  font-family: 'Potta One', cursive;
+} 
+#index p, #index figcaption {
+  font-family: 'Montserrat', sans-serif;
+}
+#index img {
+  width: auto;
+  height: 80vh;
+}
+#index h1 { /* as if I'd let only Sarah do rainbows */
+  background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+  -webkit-animation: animatedBackground_a 5s linear infinite reverse;
+  animation: animatedBackground_a 5s linear infinite reverse;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
+}
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500vw 0 }
+}
+#ql a {
+  display: inline-block;
+  background-color: rgba(128, 128, 128, 0.5);
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+#ql a:hover {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+#interesting {
+  text-decoration: underline;
+}
+/* Style for ABOUT */
+#about {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/naughty-saus.gif");
+  background-color: rgb(255, 155, 172);
+  background-size: 33%;
+  text-align: justify;
+  font-family: 'Roboto Slab', 'Jazz LET', fantasy;
+} 
+#about img {
+  width: 50%;
+  height: auto;
+}
+#about p, #about ol {
+  font-family: 'Lemonada', Arial, Helvetica, sans-serif;
+  font-size: 0.8em
+}
+
+/* Style for CONTACT */
+#contact {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+  url("/01-lesson-homework/img/celebrate-saus.gif");
+  background-color: hsl(46, 80%, 66%);
+  background-size: 25%;
+  text-align: justify;
+  font-family: 'Pacifico', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} 
+#contact img {
+  width: 70px;
+  height: auto;
+}
+#xxx {
+  -webkit-animation: color-change 1s ease-in infinite;
+  animation: color-change 1s ease-in infinite;
+  text-decoration: none;
+}
+@keyframes color-change {
+  0% { color : inherit}
+  50% { color : red }
+  100% { color : inherit}
+}
+
+/* form-section style */
+.form input[type="text"], input[type="email"], select, label, textarea {
+  padding: 10px;
+  margin: 6px;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"], input[type="submit"] {
+  margin: 10px;
+  margin-left: 16px;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
 /* MOAR JIFFS */
 .jiffs {
   text-decoration: underline;

@@ -1,65 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    body {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-      url("/01-lesson-homework/img/celebrate-saus.gif");
-      background-color: hsl(46, 80%, 66%);
-      background-repeat: repeat; 
-      background-size: 25%;
-      background-blend-mode: screen;
-      background-attachment: fixed;
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-      text-align: justify;
-    } 
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 70px;
-    }
-    .nav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      background-color: rgba(51, 51, 51, 0.9);
-      position: -webkit-sticky; /* Safari */
-      position: sticky;
-      top: 0;
-      text-align: center;
-    }
-    .nav li {
-      display: inline;
-    }
-    .nav a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    .nav a:hover {
-      background-color: rgb(17, 17, 17, 0.9);
-    }
-    .form input[type="text"], input[type="email"], select, label, textarea {
-      padding: 10px;
-      margin: 6px;
-    }
-    input[type="checkbox"] {
-      margin: 10px;
-    }
-  </style>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/01-lesson-homework/img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
     <title>Deli's Contact Page</title>
   </head>
-  <body class="contact">
-    <h1>Deli's Contact page</h1>
-
+  <body id="contact">
+    <header>
+      <h1>Delilah's Contact page</h1>
+    </header>   
     <!-- nav bar -->
     <nav>
       <ul class="nav">
@@ -75,54 +26,70 @@
       </ul>
     </nav>
 
-    <h2>Send her a message ;)</h2>
-    <h3>... maybe subscribe to her <em>onlyfurs</em> account</h3>
-    <hr>
+    <main>
+      <section id="onlyfurs">
+        <h2>Send her a message ;)</h2>
+        <h3>... maybe subscribe to her
+          <a 
+            id="xxx" 
+            href="https://www.instagram.com/delilah_thedachsund/?hl=en" 
+            target="blank"
+          > 
+            <em>onlyfurs</em>
+          </a> account
+        </h3>
+      </section>
 
-    <!-- form below -->
-    <form class="form" >
-      <label for="fristname">First Name</label>
-      <input type="text" name="firstname" id="firstname" placeholder="First Name">
-      <br>
+      <hr>
 
-      <label for="lastname">Last Name</label>
-      <input type="text" name="lastname" id="lastname" placeholder="Last Name">
-      <br>
+      <!-- form below -->
+      <section id="form-section">
+        <form class="form" >
+          <label for="fristname">First Name</label>
+          <input type="text" name="firstname" id="firstname" placeholder="First Name">
+          <br>
 
-      <label for="Email">Email Address</label>
-      <input type="email" name="email" id="email" placeholder="Your Email Address">
-      <br>
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          <br>
 
-      <label for="message">Message to Sausage</label>
-      <textarea 
-        id="message" 
-        name="message" 
-        placeholder="Write your message here" 
-        maxlength="100"
-      ></textarea>
-      <br>
+          <label for="Email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Your Email Address">
+          <br>
 
-      <input type="checkbox" id="termsandcondit" name="termsandcondit" value="agree" checked>
-      <label for="termsandcondit">
-        I agree to terms and conditions(must love Saus)
-      </label>
-      <br>
+          <label for="message">Message to Sausage</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here"
+            maxlength="100"
+          ></textarea>
+          <br>
 
-      <label for="love">How much do you love Deli:</label>
-      <select name="love" id="love">
-        <option value="little" disabled>I dont</option>
-        <option value="cute">Shes so cute</option>
-        <option value="Lots" selected>I love her so much</option>
-        <option value="Die">I would die for her</option>
-      </select>
+          <input type="checkbox" id="termsandcondit" name="termsandcondit" value="agree" checked>
+          <label for="termsandcondit">
+            I agree to terms and conditions(must love Saus)
+          </label>
+          <br>
 
-      <br>
+          <label for="love">How much do you love Deli:</label>
+          <select name="love" id="love">
+            <option value="little" disabled>I dont</option>
+            <option value="cute">Shes so cute</option>
+            <option value="Lots" selected>I love her so much</option>
+            <option value="Die">I would die for her</option>
+          </select>
+          <br>
 
-      <input type="submit" value="Submit">
-    </form>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
 
-    <a href="https://www.instagram.com/delilah_thedachsund/?hl=en" target="blank">
-      <img class="contact" src="/01-lesson-homework/img/kim-saus.gif" alt="break the suas-ernet">
-    </a>
+    <footer>
+      <a href="https://www.instagram.com/delilah_thedachsund/?hl=en" target="blank">
+        <img src="/01-lesson-homework/img/kim-saus.gif" alt="break the suas-ernet">
+      </a>
+    </footer>
   </body>
 </html>

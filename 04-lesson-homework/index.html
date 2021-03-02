@@ -1,74 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    body {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/nice-saus.gif");
-      background-color: #9BFFEE;
-      background-repeat: repeat; 
-      background-size: 33%;
-      background-blend-mode: screen;
-      background-attachment: fixed;
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-      text-align: center;
-      font-family: 'Potta One', cursive;
-    } 
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: auto;
-      height: 66vh;
-    }
-    p {
-      font-family: 'Montserrat', sans-serif;
-    }
-    .nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(51, 51, 51, 0.9);
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    text-align: center;
-    }
-    .nav li {
-      display: inline;
-    }
-    .nav a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    .nav a:hover {
-      background-color: rgb(17, 17, 17, 0.9);
-    }
-    #ql a {
-      display: inline-block;
-      background-color: rgba(128, 128, 128, 0.5);
-      text-decoration: none;
-      color: black;
-      padding: 5px;
-      border: 2px solid black;
-      border-radius: 10px;
-    }
-    #interesting {
-      text-decoration: underline;
-    }
-  </style>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delilah's picture gallery</title>
-    <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+    <title>Deli's picture gallery</title>
+    <link rel="icon" type="image/svg+xml" href="/01-lesson-homework/img/favicon.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Potta+One&display=swap">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="index">
+  <body id="index">
     <h1>Delilah's Picture Gallery</h1>
 
     <!-- nav bar -->
@@ -86,95 +27,123 @@
       </ul>
     </nav>
 
-    <p class="" id="ql">
-      Quick links:<br>
-      <a href="#snuggles">Snuggles</a>
-      <a href="#size">Look how big she is</a>
-      <a href="#stretch">Biiiig stretch</a>
-      <a href="#computer">Current position</a>
-    </p>
+    <!-- In page quick links -->
+    <div id="ql">
+      <p>
+        Quick links:<br>
+        <a href="#snuggles">Snuggles</a>
+        <a href="#size">Look how big she is</a>
+        <a href="#stretch">Biiiig stretch</a>
+        <a href="#computer">Current position</a>
+      </p>
+    </div>
+
     <hr>
 
     <!-- start of gallery -->
-    <p>
-      <img src="/01-lesson-homework/img/deli/deli-1.jpg" alt="Delilah as a baby">
-      Delilah as a baby
-    </p>
+    <main>
+      <figure>
+          <img src="/01-lesson-homework/img/deli/deli-1.jpg" alt="Delilah as a baby">
+          <figcaption>Delilah as a baby</figcaption>
+      </figure>
 
-    <hr>
+      <hr>
 
-    <blockquote style="text-indent: -10%;" cite="fiona's sister">
-      <em>
-        I would 
-        <span style="text-decoration-line: underline; text-decoration-style: wavy;">Die </span>
-        for you
-      </em>
-    </blockquote>
+      <section id="sister-quote">
+        <blockquote style="text-indent: -10%;" cite="fiona's sister">
+          <em>
+            I would
+            <span style="text-decoration-line: underline; text-decoration-style: wavy;">Die </span>
+            for you
+          </em>
+        </blockquote>
+        <p style="text-indent: 10%;">
+          -Fiona's sister
+        </p>
+      </section>
 
-    <p style="text-indent: 10%;">
-      -Fiona's sister
-    </p>
+      <hr>
 
-    <hr>
+      <figure>
+          <img src="/01-lesson-homework/img/deli/deli-2.jpg" alt="black and white deli">
+          <figcaption>Black and White Deli</figcaption>
+      </figure>
+      
+      <figure id="size">
+          <img src="/01-lesson-homework/img/deli/deli-3.jpg" alt="see how big she is">
+          <figcaption>
+            <strong>Size comparison :)</strong>
+          </figcaption>
+      </figure>
 
-    <p>
-      <img src="/01-lesson-homework/img/deli/deli-2.jpg" alt="black and white deli">
-      Black and White Deli
-    </p>
-    
-    <p id="size">
-      <img src="/01-lesson-homework/img/deli/deli-3.jpg" alt="see how big she is">
-      <strong>Size comparison :)</strong>
-    </p>
+      <figure>
+          <img src="/01-lesson-homework/img/deli/deli-4.jpg" alt="drinks with strangers">
+          <figcaption>
+            Drinks with some <del>Weirdos</del> friends
+          </figcaption>
+      </figure>
 
-    <p>
-      <img src="/01-lesson-homework/img/deli/deli-4.jpg" alt="drinks with strangers">
-      Drinks with some <del>Weirdos</del> friends
-    </p>
+      <figure>
+          <img src="/01-lesson-homework/img/deli/deli-5.jpg" alt="coats on">
+          <figcaption>
+            Sausage about town
+          </figcaption>
+      </figure>
 
-    <p>
-      <img src="/01-lesson-homework/img/deli/deli-5.jpg" alt="coats on">
-      Sausage about town
-    </p>
+      <figure>
+          <img src="/01-lesson-homework/img/deli/deli-7.jpg" alt="pretty eyes">
+          <figcaption>
+            <em>Pretty eyed Sausage</em>
+          </figcaption>
+      </figure>
 
-    <p>
-      <img src="/01-lesson-homework/img/deli/deli-7.jpg" alt="pretty eyes">
-      <em>Pretty eyed Sausage</em>
-    </p>
+      <figure id="interesting">
+          <img src="/01-lesson-homework/img/deli/deli-8.jpg" alt="most interesting dog in the world">
+          <figcaption>
+            The most interesting Dog in the world
+          </figcaption>
+      </figure>
 
-    <p id="interesting">
-      <img src="/01-lesson-homework/img/deli/deli-8.jpg" alt="most interesting dog in the world">
-      The most interesting Dog in the world
-    </p>
+      <figure id="squirrels">
+          <img src="/01-lesson-homework/img/deli/deli-9.jpg" alt="squirrel?">
+          <figcaption>
+            <strong>SQUIRREL??!</strong>
+          </figcaption>
+      </figure>
 
-    <p id="squirrels">
-      <img src="/01-lesson-homework/img/deli/deli-9.jpg" alt="squirrel?">
-      <strong>SQUIRREL??!</strong>
-    </p>
+      <figure id="snuggles">
+          <img src="/01-lesson-homework/img/deli/deli-10.jpg" alt="snuggles">Snuggle time<br>
+          Learn more about her <a href="about.html#favourite-things">favourite</a> things here
+      </figure>
 
-    <p id="snuggles">
-      <img src="/01-lesson-homework/img/deli/deli-10.jpg" alt="snuggles">Snuggle time<br>
-      Learn more about her <a href="about.html#favourite-things">favourite</a> things here
-    </p>
+      <figure>
+          <img src="/01-lesson-homework/img/deli/deli-11.jpg" alt="dog yoga?">
+          <figcaption>
+            I dont know what to write about this
+          </figcaption>
+      </figure>
 
-    <p>
-      <img src="/01-lesson-homework/img/deli/deli-11.jpg" alt="dog yoga?">
-      I dont know what to write about this
-    </p>
+      <figure>
+          <img src="/01-lesson-homework/img/deli/deli-12.jpg" alt="snow walkies please">
+          <figcaption>
+            Snow walkies! (she likes these)
+          </figcaption>
+      </figure>
 
-    <p>
-      <img src="/01-lesson-homework/img/deli/deli-12.jpg" alt="snow walkies please">
-      Snow walkies! (she likes these)
-    </p>
+      <figure id="stretch">
+          <img src="/01-lesson-homework/img/deli/deli-13.jpg" alt="what even is this?">
+          <figcaption>
+            I dont know what to write about this pt. 2
+          </figcaption>
+      </figure>
 
-    <p id="stretch">
-      <img src="/01-lesson-homework/img/deli/deli-13.jpg" alt="what even is this?">
-      I dont know what to write about this pt. 2
-    </p>
+      <figure id="computer">
+          <img src="/01-lesson-homework/img/deli/deli-14.jpg" alt="watching me code">
+          <figcaption>
+            Realtime Photos
+          </figcaption>
+      </figure>
 
-    <p id="computer">
-      <img src="/01-lesson-homework/img/deli/deli-14.jpg" alt="watching me code">
-      Realtime Photos
-    </p>
+    </main>
   </body>
 </html>
