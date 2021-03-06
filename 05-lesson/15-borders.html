@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/01-lesson-homework/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+  <title>Borders</title>
+  <style>
+    div {
+      height: 10vh;
+      width: 50%;
+      margin: 2vh auto;
+    }
+    #box-1 {
+      border-width: 3px;
+      border-style: solid; /* dotted, dashed */
+      border-color: #ffac94;
+      background: rgb(187, 139, 241)
+    }
+    /* shorthand (preferred) */
+    #box-2 {
+      border: 3px solid #66ffb7;
+      background: #e2b22c  
+    }
+    #box-3 {
+      border-top: 3px solid #ffac94;
+      border-left: 3px solid #99fffd;
+      background: #d2e688
+    }
+    /* rounded corner */
+    #box-4 {
+      border-radius: 10px;
+      background: #e4b4ff;
+    }
+    /* selecting specific corners to round */
+    #box-5 {
+      border-top-right-radius: 10px;
+      background: #85fbff
+    }
+    /* my borders a circle (border radius > 50% of border) */
+    #box-6 {
+      border-radius: 50%;
+      background: #ffe778;
+      width: 10vh;
+      /* bit below to make text in middle */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* border radius can be used on images too to make it nice and round */
+    img {
+      border-radius: 50%;
+      /* below just to make it look pretty */
+      height: 10vh;
+      width: auto;
+      display: block;
+      margin: 2vh auto;
+    }
+  </style>  
+</head>
+<body>
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>  
+  <div id="box-4"></div>  
+  <div id="box-5"></div>
+  <div id="box-6">I'm a circle</div> 
+  <img src="img/pete-sleep.JPG" alt="a sleepy petey">
+</body>
+</html>

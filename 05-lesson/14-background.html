@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/01-lesson-homework/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+    <title>backgrounds</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        height: 20vh;
+        width: 80%;
+        margin: 2vh auto; 
+        box-sizing: content-box;
+      }
+      /* Background color */
+      #box-1 {
+        background-color: #ffac94;
+        background: #ffac94;
+      }
+      /* Background image */
+      #box-2 {
+        background-image: url("/01-lesson-homework/img/deli/deli-3.jpg");
+        background-repeat: no-repeat;
+        background-position: 100px 100px;
+        /* background-position: center center; */
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      /* Shorthand Syntax */
+      /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+      #box-3 {
+        background: url("/01-lesson-homework/img/deli/deli-3.jpg") no-repeat center center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+    <div id="box-3"></div>
+  </body>
+</html>

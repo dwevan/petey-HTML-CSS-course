@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/01-lesson-homework/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+  <title>Link States (pseudo classes)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    a, button {
+      display: block;
+      margin: 2vh;
+      padding: 2vh;
+    }
+
+    /* Anchor Pseudo Classes */
+    a:link {
+      color: #e4b4ff;
+    }    
+    a:visited {
+      color: #ffe778;
+    }    
+    a:active {
+      color: #66ffb7;
+    }
+    a:hover {
+      color: #ff7f50;
+    }
+    
+    /* styling links to look like buttons etc */
+    .btn, .btn:visited { 
+      background: #aaa;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      cursor: pointer;
+      padding: 1px 6px;
+      font-size: 1em;
+      text-align: center;
+      text-decoration: none;
+      width: fit-content;
+
+    }
+    .btn:hover { 
+      filter: invert(1);
+    }
+    .btn:active {
+      background: 
+        url("/01-lesson-homework/img/autumn-saus.gif")
+        #ffffff00
+        center/contain
+        repeat;
+      filter: invert(0);
+      color: transparent;
+      width: 50%;
+      height: 10vh;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">A Link</a>
+  <a href="#">A Link</a>
+  <a href="#">A Link</a>
+  <a href="#">A Link</a>
+  <a href="#" class="btn">My Link Button</a>
+  <button class="btn">My Button</button>
+</body>
+</html>

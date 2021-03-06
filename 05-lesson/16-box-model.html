@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/01-lesson-homework/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" href="/01-lesson-homework/img/favicon.png">
+  <title>The Box model</title>
+  <style>
+    /* CSS Reset Example */
+    /* star '*' is a WILDCARD BITCHES!!!! YEEHAW!!! */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      border: 2px solid #66ffb8;
+      background: #f4f4f4;
+      margin: 20px;
+      padding: 10px;
+    }
+    .box {
+      /* Padding on all sides */
+      padding: 20px;
+      
+      /* Padding per side */
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    /* Shorthand (Preferred) */
+    .box {
+      /* Padding shorthand = top, right, bottom, left (like a clock) */
+      padding: 20px 10px 20px 10px;
+      
+      /* Padding shorthand = top+bottom, left+right */
+      padding: 20px 10px;
+    }
+
+    /* box-sizing: content-box (Default) width is added to padding and border
+                                    vs
+    box-sizing: border-box Padding and border within width/height - easier to calculate things*/
+    .box-2 {
+      width: 300px;
+      background: #f4f4f4;
+      border: 2px solid #ccc;
+      margin: 20px 0;
+      padding: 10px;
+      box-sizing: content-box;
+    }
+
+    #border-box {
+      /* Default is content-box */
+      box-sizing: border-box;
+    }
+
+    /* CSS Reset Example */
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Box Heading</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Incidunt minima fuga consectetur nesciunt nihil consequuntur 
+      pariatur, aperiam velit ad tenetur.
+    </p>
+  </div>
+  
+  <div class="box">
+    <h2>Box Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Similique quasi fugit doloremque hic laborum cum repellendus 
+      ut assumenda earum unde.
+    </p>
+  </div>
+
+  <div class="box-2" id="content-box">
+    <h2>Content Box</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iure ab, tenetur dolorem quas illum maxime. 
+      Quis magni qui vero asperiores.
+    </p>
+  </div>
+  
+  <div class="box-2" id="border-box">
+    <h2>Border Box</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Iure ab, tenetur dolorem quas illum maxime. 
+      Quis magni qui vero asperiores.
+    </p>
+  </div>
+</body>
+</html>
