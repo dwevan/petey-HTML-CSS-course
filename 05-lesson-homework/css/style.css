@@ -1,6 +1,11 @@
 /* Trialling @import for contact page even though <link> is more efficient and according to google, BP! */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&family=Rubik&family=VT323&display=swap');
 
+/* Resettors? is that a  word? */
+* {
+  box-sizing: border-box;
+}
+
 /* common style */
 body {
   background-repeat: repeat; 
@@ -112,8 +117,8 @@ nav a:hover {
   font-family: 'Pacifico', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 } 
 #contact img {
-  width: 70px;
-  height: auto;
+  width: auto;
+  height: 15vh;
 }
 #xxx {
   -webkit-animation: color-change 1s ease-in infinite;
@@ -137,6 +142,7 @@ input[type="checkbox"], input[type="submit"] {
   margin-left: 16px;
   font-family: 'VT323', 'Courier New', Courier, monospace;
   font-size: 18px;
+  cursor: not-allowed;
 }
 
 /* MOAR JIFFS */
@@ -146,3 +152,47 @@ input[type="checkbox"], input[type="submit"] {
   font-style: oblique;
 }
 /* MOOAAAAAARRRRRR!!! */
+
+/* input added from Lesson 5 - buttons already done up above, background obv done */
+
+/* usually for readability pete, I'd put these with above, 
+but I havent just so you can see Ive done something this week */
+
+main a:link {
+  text-decoration: dotted;
+  color: #ff00aa;
+}    
+main a:visited {
+  color: #dda0dd;
+}    
+main a:visited::after {
+  content:  "\2713 ";
+}    
+main a:hover {
+  color: #ff7f50;
+  font-size: 1.5em
+}    
+main a:active {
+  color: transparent;
+  background: url("/01-lesson-homework/img/kim-saus.gif")
+    #ffffff00
+    center/contain
+    repeat;
+}
+
+#confoot {
+  border-radius: 50%;
+  background: #9bffee88;
+}
+#contact footer a {
+  cursor: grab;
+}
+
+input[type="submit"] {
+  border: 3px dotted #000;
+  background: #9bffee88;
+  cursor: pointer;
+}
+input[type="submit"]:active {
+  filter: invert(.5);
+}
