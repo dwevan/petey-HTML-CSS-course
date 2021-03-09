@@ -22,7 +22,7 @@ img {
 }
 
 /* navbar elements -  all the same */
-nav {
+nav.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -33,17 +33,17 @@ nav {
   text-align: center;
   font-family: 'Rubik', Verdana, Geneva, Tahoma, sans-serif;
 }
-nav li {
+nav.topnav li {
   display: inline;
 }
-nav a {
+nav.topnav a {
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-nav a:hover {
+nav.topnav a:hover {
   background-color: rgb(17, 17, 17, 0.9);
 }
 
@@ -55,7 +55,7 @@ nav a:hover {
   text-align: center;
   font-family: 'Potta One', cursive;
 } 
-#index p, #index figcaption {
+#index p, #index figcaption, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 #index img {
@@ -74,7 +74,10 @@ nav a:hover {
     0% { background-position: 0 0 }
     100% { background-position: -500vw 0 }
 }
-#ql a {
+#quicklinks li {
+  display: inline;
+}
+#quicklinks a {
   display: inline-block;
   background-color: rgba(128, 128, 128, 0.5);
   text-decoration: none;
@@ -82,15 +85,20 @@ nav a:hover {
   padding: 5px;
   border: 2px solid black;
   border-radius: 10px;
+  list-style: none;
 }
-#ql a:hover {
+#quicklinks a:hover {
   -webkit-filter: invert(.9);
   filter: invert(.9);
 }
-#interesting {
+.underline {
   text-decoration: underline;
+  font-style: normal;
 }
 /* Style for ABOUT */
+ul {
+  list-style: none;
+}
 #about {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/01-lesson-homework/img/naughty-saus.gif");
   background-color: rgb(255, 155, 172);
