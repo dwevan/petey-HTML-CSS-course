@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="icon" type="image/svg+xml" href="/01-lesson-homework/img/favicon.svg">
+  <title>Inline+Bloc</title>
+  <style>
+    /* converts block elements to inline */
+    /* in case of li this also removes the bullet point - useful for nav menu */
+    li {
+      display: inline;
+    }
+
+    /* We must make image a block to centre it */
+    .center-img {
+      display: block;
+      margin: auto;
+    }
+
+    /* inline - Doesn’t take into account width/height or margins
+    inline-block - Is the solution to this */
+    .box {
+      box-sizing: border-box;
+      display: inline-block; /* inline will not work */
+      width: 32%;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+    <li><a href="#">Impedit quaerat enim omnis vero.</a></li>
+    <li><a href="#">Suscipit dicta nihil culpa odit?</a></li>
+  </ul>
+
+  <img src="https://source.unsplash.com/300x300/?mountain" class="center-img">
+
+  <div class="box" id="box-1">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nam sunt, rerum ex alias eos a doloremque placeat magni quis!</p>
+  </div>
+  <div class="box" id="box-2">
+    <h3>Heading</h3>
+    <p>Similique possimus blanditiis, cumque eligendi ab eius quia dolor a sit enim aspernatur sequi nesciunt voluptatem neque ipsum alias ullam!</p>
+  </div>
+  <div class="box" id="box-3">
+    <h3>Heading</h3>
+    <p>Quas, quisquam molestias dolorum excepturi expedita soluta animi adipisci deserunt consequuntur doloribus sequi blanditiis vero in similique tenetur recusandae saepe!</p>
+  </div>
+
+
+</body>
+</html>

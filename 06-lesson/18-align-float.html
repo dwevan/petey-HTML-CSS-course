@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/01-lesson-homework/img/favicon.svg">
+  <title>Align & Float</title>
+  <style>
+    /* Center align element with margin: auto */
+    /* width --> max-width for mobile responsiveness 
+    (allows div to scale down infinitely but up to a certain point only) */
+    .wrap {
+      max-width: 1024px;
+      margin: auto;
+    }
+    .box p {
+      /* Text align */
+      text-align: left; /* Default */
+      text-align: right; /* (RTL) Hebrew */
+      text-align: center; /* 🇺🇸 */
+      text-align: justify; /* Think Word Doc/books to fill space */
+    }
+    /* Using Float to layout the page */
+    #box-2 {
+      float: left;
+      width: 70%;
+    }
+
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+    /* Utility class to clear float */
+    .clr {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box-1">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa dolor nisi quas perspiciatis esse sequi odit laborum ducimus quis?</p>
+  </div>
+  <div class="box" id="box-2">
+    <h3>Heading</h3>
+    <p>Sunt voluptas quasi, maiores molestias unde possimus repudiandae enim nostrum! Sunt eum, numquam eaque fugiat adipisci quia facilis aut commodi.</p>
+  </div>
+  <div class="box" id="box-3">
+    <h3>Heading</h3>
+    <p>Error ratione obcaecati repellat eaque minima soluta quae incidunt veniam vero tempora, recusandae nihil vitae commodi a consequatur harum? Quas!</p>
+  </div>
+  <!-- Utility div to clear floats from above --> 
+  <div class="clr"></div>
+
+  <div class="box" id="box-4">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis eum recusandae ad earum necessitatibus reprehenderit perspiciatis aliquam ab ex.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/01-lesson-homework/img/favicon.svg">
+  <title>Position</title>
+  <style>
+    .box {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 10px;
+      background: #ccc;
+    }
+    /* Static (default) doesn't effect */
+    #box-1 {
+      position: static;
+      background: pink;
+    }
+    /* Relative positioning */
+    #box-2 {
+      position: relative;
+      background: paleturquoise;
+      top: 50px;
+      left: 50px;
+    }
+
+    .wrap {
+      position: relative;
+      height: 300px;
+      width: 300px;
+      background: #f4f4f4;
+    }
+    /* Absolute positioning */
+    #box-3 {
+      position: absolute;
+      background: palegreen;
+      top: 50px;
+      left: 50px;
+    }
+
+    /* Absolute positioning */
+    #box-5 {
+      position: fixed;
+      background: darkred;
+      top: 100px;
+      right: 50px;
+    }
+
+    /* Absolute positioning */
+    #box-6 {
+      position: -webkit-sticky;
+      position: sticky;
+      background: olive;
+      top: 0;
+    }
+
+    /* Position in 3d/order of content from front to back
+    higher z-index shown in front, numbers can be negative too */
+    /* however, Only works with positioned elements: absolute, relative, fixed, stickey */
+    .example {
+      z-index: 2;
+    }
+
+    #my-selector-1 {
+      /* Make all text uppercase */
+      text-transform: uppercase;
+    }
+    #my-selector-2 {
+      /* Make all text lowercase */
+      text-transform: lowercase;
+    }
+    #my-selector-3 {
+      /* Make first character of each word uppercase */
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://www.w3schools.com/cssref/pr_class_position.asp">position w3 link</a>
+  <div class="box" id="box-1"></div>
+  <div class="box" id="box-2"></div>
+  <div class="box" id="box-3"></div>
+  <div class="box" id="box-4"></div>
+  <div class="box" id="box-5"></div>
+  <div class="box" id="box-6"></div>
+  <div class="textselector">
+    <p id="my-selector-1">upper case</p>
+    <p id="my-selector-2">LoWeR CaSe</p>
+    <p id="my-selector-3">capitalised words</p>
+  </div>
+  <br><br><br><br><br><br><br><br>
+</body>
+</html>
