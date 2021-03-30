@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    /* styling for vertical menu */
+    .vertical-menu {
+      list-style: none;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      width:  100px;
+      padding: 5px 10px;
+    }
+    .vertical-menu li {
+      padding: 10px 0;
+      border-bottom: 2px solid #ddd;
+    }
+    .vertical-menu li:last-child {
+      border: none;
+    }
+    .vertical-menu li a {
+      color: #333;
+      text-decoration: none;
+    }
+    .vertical-menu li a:hover {
+      color: #ff7f50;
+    }
+
+    /* styling for horizontal menu */
+    .horizontal-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: coral;
+    }
+    .horizontal-menu li {
+      display: inline-block;
+    }
+    .horizontal-menu li a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+    }
+    .horizontal-menu li a:hover {
+      color: #333;
+      background: rgb(221, 99, 55);
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Side menu -->
+  <ul class="vertical-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <!-- Navbar -->
+  <ul class="horizontal-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+</body>
+</html>
