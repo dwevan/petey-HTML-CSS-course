@@ -30,6 +30,7 @@ header a:visited, header a:link{
  width: 40%;
  font-weight: bold;
  font-size: 1.5em;
+ padding: 9px;
 }
 
 nav {
@@ -40,19 +41,20 @@ nav {
 }
 nav li {
   display: inline-block;
+  padding: 15px;
 }
-nav a {
-  padding: 10px 0;
-  vertical-align: middle;
-}
-/* nav a:hover{
+
+nav a:hover{
   filter: invert(0.5);
-} */
-nav #active-page {
+}
+#active-page {
   color: #efc292;
   background: #444;
 }
-nav #active-page:visited, #active-page:link{
+#active-page a {
+  color: #efc292;
+}
+#active-page:visited, #active-page:link{
   color: #efc292;
   background: #444;
 }
@@ -63,6 +65,14 @@ footer {
   color: #fff;
   padding: 15px 0;
   background: #444;
+}
+
+/* Button element - shared on Index and Contact */
+.btn {
+  display: inline-block;
+  padding: 10px;
+  background: #444;
+  list-style: none;
 }
 
 /* Index Page CSS */
@@ -102,7 +112,10 @@ article.history {
   float: right;
   width: 50%;
 }
-
+#read-more {
+  background: #f4f4f4;
+  color: #333;
+}
 .bottom {
   color: #333;
 }
