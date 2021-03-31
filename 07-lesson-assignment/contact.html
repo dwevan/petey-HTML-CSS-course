@@ -6,9 +6,69 @@
   <link rel="icon" type="image/svg+xml" href="/01-lesson-homework/img/favicon.svg">
   <script src="https://kit.fontawesome.com/a1f8a6480e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style/style.css">
-  <title>Contact</title>
+  <title>Hotel Hobbit Hole | Contact</title>
 </head>
-<body>
+<body class="contact">
+  <!-- Header & Navbar (repeated)-->
+  <header class="header-bar">
+    <div class="logo">
+      <p id="hhh"><a href="/07-lesson-assignment/index.html">HHH</a></p>
+    </div>
+  <!-- navbar element -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="/07-lesson-assignment/index.html">Home</a></li>
+        <li><a href="/07-lesson-assignment/about.html">About</a></li>
+        <li><a href="/07-lesson-assignment/contact.html" id="active-page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form">
+      <h1><span class="orangify">Contact</span> Us</h1>
+      <p>Please fill out the form below to contact us</p>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name-input">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email-input">
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message-input"
+          cols="30"
+          rows="10"
+          maxlength="100"
+        >
+        </textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="information">
+      <article class="location, info">
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <h2>Location</h2>
+        <p>Matamata, New Zealand</p>
+      </article>
+      <article class="phone, info">
+        <i class="fas fa-phone fa-2x"></i>
+        <h2>Phone Number</h2>
+        <p>+64 7-888 1505</p>
+      </article>
+      <article class="email, info">
+        <i class="fas fa-envelope fa-2x"></i>
+        <h2>Email Address</h2>
+        <p>becomearealhobbit@hhh.com</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer (repeated) -->
+  <footer>
+    <p>Hotel Hobbit Hole &copy; 2021</p>
+  </footer>
   
 </body>
 </html>

@@ -1,1 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* CSS resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.clr {
+  clear: both;
+}
+/* Common elements (header, navbar, footer) */
+
+header {
+  text-align: center;
+}
+header a:visited, header a:link{
+  color: #fff;
+}
+
+.logo {
+ float: left;
+ width: 40%;
+ background: #333;
+ font-weight: bold;
+}
+
+nav {
+  float: right;
+  width: 60%;
+  list-style: none;
+  background: #333;
+}
+nav li {
+  display: inline-block;
+}
+nav a:hover{
+  filter: invert(0.5);
+}
+nav #active-page {
+  color: #efc292;
+  background: #444;
+}
+nav #active-page:visited, #active-page:link{
+  color: #efc292;
+  background: #444;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 30px 0;
+  background: #444;
+}
+
+/* Index Page CSS */
+*.index {
+  text-align: center;
+  color: #fff;
+}
+*.index a:visited, *.index a:link {
+  color: #fff;
+}
+
+section.about-hotel {
+  background: url("/07-lesson-assignment/resources-assignment-1/img/showcase.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.orangify {
+  color: #efc292
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+figure {
+  float: left;
+  width: 50%;
+}
+article.history {
+  background: #333;
+  float: right;
+  width: 50%;
+}
+
+.bottom {
+  color: #333;
+}
+.bottom-article{
+  float: left;
+  width: 33.33333333333333333%;
+  background: #f4f4f4;
+}
+
+#bottom2 {
+  background: #efc292;
+}
+
+/* Contact Page CSS */
+.contact {
+  padding: 0 10%;
+}
+form *{
+  display: block;
+}
+.info {
+  text-align: center;
+  color: #fff;
+  background: #333;
+  float: left;
+  width: 33.33333333333333333333%;
+}
