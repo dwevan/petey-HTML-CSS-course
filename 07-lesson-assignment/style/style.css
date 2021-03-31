@@ -16,7 +16,10 @@
 /* Common elements (header, navbar, footer) */
 
 header {
-  text-align: center;
+  padding: 0 10%;
+  width: 100%;
+  background: #333;
+  overflow:hidden;
 }
 header a:visited, header a:link{
   color: #fff;
@@ -25,22 +28,26 @@ header a:visited, header a:link{
 .logo {
  float: left;
  width: 40%;
- background: #333;
  font-weight: bold;
+ font-size: 1.5em;
 }
 
 nav {
   float: right;
   width: 60%;
   list-style: none;
-  background: #333;
+  text-align: right;
 }
 nav li {
   display: inline-block;
 }
-nav a:hover{
-  filter: invert(0.5);
+nav a {
+  padding: 10px 0;
+  vertical-align: middle;
 }
+/* nav a:hover{
+  filter: invert(0.5);
+} */
 nav #active-page {
   color: #efc292;
   background: #444;
@@ -54,17 +61,20 @@ footer {
   width: 100%;
   text-align: center;
   color: #fff;
-  padding: 30px 0;
+  padding: 15px 0;
   background: #444;
 }
 
 /* Index Page CSS */
 *.index {
-  text-align: center;
   color: #fff;
 }
 *.index a:visited, *.index a:link {
   color: #fff;
+}
+
+.index main {
+  text-align: center;
 }
 
 section.about-hotel {
@@ -76,17 +86,19 @@ section.about-hotel {
 .orangify {
   color: #efc292
 }
-
-figure img {
-  width: 100%;
-  display: block;
+section.history {
+  overflow: hidden;
+  background: #333;
 }
 figure {
   float: left;
   width: 50%;
 }
+figure img {
+  width: 100%;
+  display: block;
+}
 article.history {
-  background: #333;
   float: right;
   width: 50%;
 }
@@ -105,16 +117,33 @@ article.history {
 }
 
 /* Contact Page CSS */
-.contact {
+.form {
   padding: 0 10%;
+  overflow:hidden;
 }
 form *{
   display: block;
 }
-.info {
+.information {
+  padding: 0 10%;
+  overflow: hidden;
+  background: #333;
   text-align: center;
   color: #fff;
-  background: #333;
+}
+.info {
   float: left;
   width: 33.33333333333333333333%;
+}
+
+
+/* About Page CSS */
+.about-main {
+  overflow: hidden;
+  padding: 0 10%;
+}
+
+.testimonials {
+  background: url("/07-lesson-assignment/resources-assignment-1/img/testimonials-bg.jpg") no-repeat center center;
+  background-size: cover;
 }
