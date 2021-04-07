@@ -43,9 +43,11 @@ nav li {
   padding: 15px;
 }
 
-nav a:hover{
-  filter: invert(0.5);
+nav li:hover, nav li:hover a {
+  background: #444;
+  color: #efc292;
 }
+
 #active-page {
   color: #efc292;
   background: #444;
@@ -57,7 +59,10 @@ nav a:hover{
   color: #efc292;
   background: #444;
 }
-
+#active-page:hover, #active-page:hover a {
+  background: url("https://i.pinimg.com/originals/00/2a/12/002a12ffdc86fc5f0c7c68cd420c1c6d.gif") no-repeat center center;
+  background-size: cover;
+}
 footer {
   width: 100%;
   text-align: center;
