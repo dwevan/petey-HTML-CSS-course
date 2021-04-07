@@ -16,7 +16,6 @@
 /* Common elements (header, navbar, footer) */
 
 header {
-  padding: 0 10%;
   width: 100%;
   background: #333;
   overflow:hidden;
@@ -30,7 +29,7 @@ header a:visited, header a:link{
  width: 40%;
  font-weight: bold;
  font-size: 1.5em;
- padding: 9px;
+ padding: 9px 0;
 }
 
 nav {
@@ -67,6 +66,10 @@ footer {
   background: #444;
 }
 
+div.max-width {
+  max-width: 900px;
+  margin: auto;
+}
 /* Button element - shared on Index and Contact */
 .btn {
   display: inline-block;
@@ -131,7 +134,6 @@ article.history {
 
 /* Contact Page CSS */
 .form {
-  padding: 0 10%;
   overflow:hidden;
 }
 form *{
@@ -153,7 +155,6 @@ form *{
 /* About Page CSS */
 .about-main {
   overflow: hidden;
-  padding: 0 10%;
 }
 
 .testimonials {
