@@ -157,6 +157,22 @@ form *{
   overflow: hidden;
 }
 
+.about-hobbit-hole article {
+  float: left;
+  width: 60%;
+}
+
+.about-hobbit-hole figure {
+  float: right;
+  width: 40%;
+}
+
+.about-hobbit-hole img {
+  border: 2px;
+}
+
+
+
 .testimonials {
   background: url("/07-lesson-assignment/resources-assignment-1/img/testimonials-bg.jpg") no-repeat center center;
   background-size: cover;
