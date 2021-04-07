@@ -153,27 +153,53 @@ form *{
 
 
 /* About Page CSS */
-.about-main {
-  overflow: hidden;
-}
 
 .about-hobbit-hole article {
   float: left;
   width: 60%;
 }
 
+.about-hobbit-hole h1 {
+  font-size: 2em;
+  padding: 20px 0;
+}
+
 .about-hobbit-hole figure {
   float: right;
   width: 40%;
+  padding: 40px;
 }
 
 .about-hobbit-hole img {
-  border: 2px;
+  border: solid 5px #dedede;
+  border-radius: 2px;
 }
-
-
 
 .testimonials {
   background: url("/07-lesson-assignment/resources-assignment-1/img/testimonials-bg.jpg") no-repeat center center;
   background-size: cover;
+  color: #fff;
+  overflow: auto;
+}
+.testimonials h1 {
+  text-align: center;
+  margin: 70px auto 30px auto;
+  font-size: 2em;
+}
+.testimonial {
+  background: #000000aa;
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.testimonial img{
+  border-radius: 50%;
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+.testimonial p {
+  float: right;
+  width: 85%;
+  padding: 25px 10px;
 }
